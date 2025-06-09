@@ -14,12 +14,6 @@ Trasetone is a music genre and mood classification system built with Python and 
 
 ---
 
-## 🖼️ UI Preview
-
-<img src="screenshots/trasetone_ui.png" alt="Trasetone UI" width="800"/>
-
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: Streamlit
@@ -28,15 +22,3 @@ Trasetone is a music genre and mood classification system built with Python and 
 - **ML Model**: Scikit-learn (placeholder - customizable)
 - **Deployment**: Streamlit Cloud / Local
 
----
-
-## 🚀 How to Run
-
-### 🧰 Prerequisites
-
-Ensure Python 3.8+ is installed.
-
-Install required packages:
-
-```bash
-pip install -r requirements.txt
