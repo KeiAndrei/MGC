@@ -95,4 +95,4 @@ if audio_file:
             else:
                 st.write("Estimated Tempo: Not detected")
         except Exception as e:
-            st.warning(f"Could not estimate tempo:
+            st.warning(f"Could not estimate tempo: {e}")
