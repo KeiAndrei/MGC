@@ -90,9 +90,8 @@ if audio_file:
 
         try:
             tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
-            if tempo is not None:
-                st.write(f"Estimated Tempo: {tempo:.2f} BPM")
-            else:
-                st.write("Estimated Tempo: Not detected")
+            if isinstance(tempo, (np.ndarray, list)):
+                tempo = float(np.mean(tempo))
+            st.write(f"Estimated Tempo: {tempo:.2f} BPM")
         except Exception as e:
             st.warning(f"Could not estimate tempo: {e}")
